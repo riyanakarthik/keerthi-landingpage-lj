@@ -31,8 +31,8 @@ export default function HomePage() {
           <span className="ml-2 text-sm text-muted-foreground">GROUP</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link href="#companies" className="text-sm font-medium hover:underline underline-offset-4">
-            Companies
+          <Link href="#divisions" className="text-sm font-medium hover:underline underline-offset-4">
+            Divisions
           </Link>
           <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4">
             About
@@ -67,7 +67,7 @@ export default function HomePage() {
               </div>
               <div className="space-x-4">
                 <Button size="lg" className="h-12 px-8">
-                  Explore Our Companies
+                  Explore Our Divisions
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
                 <Button variant="outline" size="lg" className="h-12 px-8 bg-transparent">
@@ -78,12 +78,12 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Companies Section */}
-        <section id="companies" className="w-full py-12 md:py-24 lg:py-32">
+        {/* Divisions Section */}
+        <section id="divisions" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Companies</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Divisions</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
                   Diverse portfolio spanning multiple industries, each committed to excellence and innovation.
                 </p>
@@ -95,8 +95,8 @@ export default function HomePage() {
                 <TabsTrigger value="triumph">Automobiles</TabsTrigger>
                 <TabsTrigger value="chemicals">Chemicals</TabsTrigger>
                 <TabsTrigger value="software">Software</TabsTrigger>
-                <TabsTrigger value="petroleum">Petroleum</TabsTrigger>
-                <TabsTrigger value="lubricants">Lubricants</TabsTrigger>
+                <TabsTrigger value="fuel-outlet">Fuel Outlet</TabsTrigger>
+                <TabsTrigger value="distributions">Distributions</TabsTrigger>
               </TabsList>
 
               <TabsContent value="triumph" className="space-y-6">
@@ -262,7 +262,7 @@ export default function HomePage() {
                 </Card>
               </TabsContent>
 
-              <TabsContent value="petroleum" className="space-y-6">
+              <TabsContent value="fuel-outlet" className="space-y-6">
                 <Card className="overflow-hidden">
                   <div className="grid lg:grid-cols-2 gap-0">
                     <div className="p-8">
@@ -305,7 +305,7 @@ export default function HomePage() {
                 </Card>
               </TabsContent>
 
-              <TabsContent value="lubricants" className="space-y-6">
+              <TabsContent value="distributions" className="space-y-6">
                 <Card className="overflow-hidden">
                   <div className="grid lg:grid-cols-2 gap-0">
                     <div className="p-8">
@@ -423,9 +423,6 @@ export default function HomePage() {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button className="h-12 px-8">Our Leadership</Button>
-                  <Button variant="outline" className="h-12 px-8 bg-transparent">
-                    Company Timeline
-                  </Button>
                 </div>
               </div>
               <Image
