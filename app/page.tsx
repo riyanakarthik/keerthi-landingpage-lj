@@ -406,6 +406,55 @@ export default function HomePage() {
                     </div>
                   </div>
                 </Card>
+
+                <Card className="overflow-hidden">
+                  <div className="grid lg:grid-cols-2 gap-0">
+                    <div className="p-8">
+                      <div className="flex items-center gap-3 mb-4">
+                        <Building className="h-8 w-8 text-primary" />
+                        <div>
+                          <h3 className="text-2xl font-bold">Binary INC</h3>
+                          <Badge variant="secondary">HPCL Authorized Distributor</Badge>
+                        </div>
+                      </div>
+                      <p className="text-muted-foreground mb-6">
+                        Authorized distributor of HPCL lubricants in Bangalore, focusing on supply and distribution of
+                        high-quality lubricating oils and greases for automotive and industrial applications.
+                      </p>
+                      <div className="space-y-3 mb-6">
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Extensive HPCL product range</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Expert guidance & consultation</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Timely delivery guarantee</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Eco-friendly practices</span>
+                        </div>
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        Serving Bangalore Urban and Rural areas with educational workshops and continuous service
+                        improvement.
+                      </p>
+                    </div>
+                    <div className="bg-muted/50 p-8 flex items-center justify-center">
+                      <Image
+                        src="/placeholder.svg?height=300&width=400"
+                        width="400"
+                        height="300"
+                        alt="Binary INC Lubricants"
+                        className="rounded-lg object-cover"
+                      />
+                    </div>
+                  </div>
+                </Card>
               </TabsContent>
             </Tabs>
           </div>
