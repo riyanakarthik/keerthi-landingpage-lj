@@ -17,6 +17,7 @@ import {
   Building,
   Target,
   Eye,
+  Home,
 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
@@ -91,12 +92,13 @@ export default function HomePage() {
             </div>
 
             <Tabs defaultValue="triumph" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 lg:grid-cols-5 mb-8">
+              <TabsList className="grid w-full grid-cols-2 lg:grid-cols-6 mb-8">
                 <TabsTrigger value="triumph">Automobiles</TabsTrigger>
                 <TabsTrigger value="chemicals">Chemicals</TabsTrigger>
-                <TabsTrigger value="software">Software</TabsTrigger>
-                <TabsTrigger value="fuel-outlet">Fuel Outlet</TabsTrigger>
                 <TabsTrigger value="distributions">Distributions</TabsTrigger>
+                <TabsTrigger value="fuel-outlet">Fuel Outlet</TabsTrigger>
+                <TabsTrigger value="real-estate">Real Estate</TabsTrigger>
+                <TabsTrigger value="software">Software</TabsTrigger>
               </TabsList>
 
               <TabsContent value="triumph" className="space-y-6">
@@ -298,6 +300,49 @@ export default function HomePage() {
                         width="400"
                         height="300"
                         alt="Keerthi Service Station"
+                        className="rounded-lg object-cover"
+                      />
+                    </div>
+                  </div>
+                </Card>
+              </TabsContent>
+
+              <TabsContent value="real-estate" className="space-y-6">
+                <Card className="overflow-hidden">
+                  <div className="grid lg:grid-cols-2 gap-0">
+                    <div className="p-8">
+                      <div className="flex items-center gap-3 mb-4">
+                        <Home className="h-8 w-8 text-primary" />
+                        <div>
+                          <h3 className="text-2xl font-bold">Keerthi Estates</h3>
+                          <Badge variant="secondary">Coming Soon</Badge>
+                        </div>
+                      </div>
+                      <p className="text-muted-foreground mb-6">
+                        Upcoming residential and commercial projects blending modern design with eco-friendly practices to
+                        redefine urban living in Bangalore.
+                      </p>
+                      <div className="space-y-3 mb-6">
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Modern architecture</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Eco-friendly materials</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Premium amenities</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-muted/50 p-8 flex items-center justify-center">
+                      <Image
+                        src="/placeholder.svg?height=300&width=400"
+                        width="400"
+                        height="300"
+                        alt="Keerthi Estates Illustration"
                         className="rounded-lg object-cover"
                       />
                     </div>
