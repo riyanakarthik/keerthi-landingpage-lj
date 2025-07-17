@@ -1,0 +1,665 @@
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import {
+  ArrowRight,
+  CheckCircle,
+  Users,
+  Phone,
+  Mail,
+  MapPin,
+  Car,
+  Beaker,
+  Code,
+  Fuel,
+  Building,
+  Target,
+  Eye,
+} from "lucide-react"
+import Link from "next/link"
+import Image from "next/image"
+
+export default function HomePage() {
+  return (
+    <div className="flex flex-col min-h-screen">
+      {/* Header */}
+      <header className="px-4 lg:px-6 h-16 flex items-center border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
+        <Link href="/" className="flex items-center justify-center">
+          <span className="text-2xl font-bold text-primary">KEERTHI</span>
+          <span className="ml-2 text-sm text-muted-foreground">GROUP</span>
+        </Link>
+        <nav className="ml-auto flex gap-4 sm:gap-6">
+          <Link href="#companies" className="text-sm font-medium hover:underline underline-offset-4">
+            Companies
+          </Link>
+          <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4">
+            About
+          </Link>
+          <Link href="#leadership" className="text-sm font-medium hover:underline underline-offset-4">
+            Leadership
+          </Link>
+          <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4">
+            Contact
+          </Link>
+        </nav>
+      </header>
+
+      <main className="flex-1">
+        {/* Hero Section */}
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-br from-slate-50 to-white">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center space-y-4 text-center">
+              <div className="space-y-2">
+                <Badge variant="secondary" className="mb-4 text-sm px-4 py-2">
+                  Since 1986 • Multi-Industry Excellence
+                </Badge>
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                  KEERTHI GROUP
+                </h1>
+                <p className="text-xl md:text-2xl font-medium text-primary mb-4">Excellence in Every Endeavor</p>
+                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                  A distinguished leader in industrial, FMCG, and automobile sectors, renowned for quality and customer
+                  satisfaction. From chemicals to motorcycles, software to lubricants - we deliver innovative solutions
+                  that enhance everyday lives.
+                </p>
+              </div>
+              <div className="space-x-4">
+                <Button size="lg" className="h-12 px-8">
+                  Explore Our Companies
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+                <Button variant="outline" size="lg" className="h-12 px-8 bg-transparent">
+                  Our Story
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Companies Section */}
+        <section id="companies" className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Companies</h2>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
+                  Diverse portfolio spanning multiple industries, each committed to excellence and innovation.
+                </p>
+              </div>
+            </div>
+
+            <Tabs defaultValue="triumph" className="w-full">
+              <TabsList className="grid w-full grid-cols-2 lg:grid-cols-5 mb-8">
+                <TabsTrigger value="triumph">Automobiles</TabsTrigger>
+                <TabsTrigger value="chemicals">Chemicals</TabsTrigger>
+                <TabsTrigger value="software">Software</TabsTrigger>
+                <TabsTrigger value="petroleum">Petroleum</TabsTrigger>
+                <TabsTrigger value="lubricants">Lubricants</TabsTrigger>
+              </TabsList>
+
+              <TabsContent value="triumph" className="space-y-6">
+                <Card className="overflow-hidden">
+                  <div className="grid lg:grid-cols-2 gap-0">
+                    <div className="p-8">
+                      <div className="flex items-center gap-3 mb-4">
+                        <Car className="h-8 w-8 text-primary" />
+                        <div>
+                          <h3 className="text-2xl font-bold">Keerthi Triumph</h3>
+                          <Badge variant="secondary">Oldest & Largest Triumph Dealership in India</Badge>
+                        </div>
+                      </div>
+                      <p className="text-muted-foreground mb-6">
+                        Ultra-modern showroom with integrated after-sales service facility featuring the global
+                        signature Triumph Motorcycles layout. Unique 'Build your own Bike' concept in the premium
+                        motorcycle segment.
+                      </p>
+                      <div className="space-y-3 mb-6">
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">International standards of sales & service</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Complete range of Triumph merchandise</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">4 Strategic locations across Bangalore</span>
+                        </div>
+                      </div>
+                      <div className="space-y-2">
+                        <p className="font-semibold">Locations:</p>
+                        <div className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
+                          <span>• Residency Road</span>
+                          <span>• JP Nagar</span>
+                          <span>• HBR Layout</span>
+                          <span>• Mysore</span>
+                        </div>
+                        <p className="text-sm mt-4">
+                          <Phone className="h-4 w-4 inline mr-2" />
+                          +91 9986665565
+                        </p>
+                      </div>
+                    </div>
+                    <div className="bg-muted/50 p-8 flex items-center justify-center">
+                      <Image
+                        src="/placeholder.svg?height=300&width=400"
+                        width="400"
+                        height="300"
+                        alt="Keerthi Triumph Showroom"
+                        className="rounded-lg object-cover"
+                      />
+                    </div>
+                  </div>
+                </Card>
+              </TabsContent>
+
+              <TabsContent value="chemicals" className="space-y-6">
+                <Card className="overflow-hidden">
+                  <div className="grid lg:grid-cols-2 gap-0">
+                    <div className="p-8">
+                      <div className="flex items-center gap-3 mb-4">
+                        <Beaker className="h-8 w-8 text-primary" />
+                        <div>
+                          <h3 className="text-2xl font-bold">Keerthi Chemicals</h3>
+                          <Badge variant="secondary">5 Decades of Excellence</Badge>
+                        </div>
+                      </div>
+                      <p className="text-muted-foreground mb-6">
+                        Pioneer in Inorganic Chemicals with 50+ years of manufacturing Sulphuric Acid. Leading producer
+                        serving batteries, textiles, refineries, and more.
+                      </p>
+                      <div className="space-y-3 mb-6">
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">100 MTPD production capacity</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Dedicated SS316L tanker fleet</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Battery Grade Sulphuric Acid specialist</span>
+                        </div>
+                      </div>
+                      <div className="space-y-2">
+                        <p className="font-semibold">Key Clients:</p>
+                        <div className="text-sm text-muted-foreground space-y-1">
+                          <span>• Exide Industries Ltd, Hosur</span>
+                          <br />
+                          <span>• Amararaja Batteries Ltd, Thirupathi</span>
+                          <br />
+                          <span>• Exide Batteries, Bangalore</span>
+                          <br />
+                          <span>• Power Build Batteries Ltd</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-muted/50 p-8 flex items-center justify-center">
+                      <Image
+                        src="/placeholder.svg?height=300&width=400"
+                        width="400"
+                        height="300"
+                        alt="Keerthi Chemicals Plant"
+                        className="rounded-lg object-cover"
+                      />
+                    </div>
+                  </div>
+                </Card>
+              </TabsContent>
+
+              <TabsContent value="software" className="space-y-6">
+                <Card className="overflow-hidden">
+                  <div className="grid lg:grid-cols-2 gap-0">
+                    <div className="p-8">
+                      <div className="flex items-center gap-3 mb-4">
+                        <Code className="h-8 w-8 text-primary" />
+                        <div>
+                          <h3 className="text-2xl font-bold">Xenon</h3>
+                          <Badge variant="secondary">Future of Dealership Management</Badge>
+                        </div>
+                      </div>
+                      <p className="text-muted-foreground mb-6">
+                        Cutting-edge SaaS platform with intuitive dashboard transforming dealership operations.
+                        Real-time inventory tracking, seamless vehicle monitoring, and optimized day-to-day operations.
+                      </p>
+                      <div className="space-y-3 mb-6">
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Real-time inventory management</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Seamless vehicle monitoring</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Scalable & innovative design</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Global expansion ready</span>
+                        </div>
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        Designed for precision and efficiency, managing every vehicle's journey from stockyard to
+                        customer.
+                      </p>
+                    </div>
+                    <div className="bg-muted/50 p-8 flex items-center justify-center">
+                      <Image
+                        src="/placeholder.svg?height=300&width=400"
+                        width="400"
+                        height="300"
+                        alt="Xenon Software Dashboard"
+                        className="rounded-lg object-cover"
+                      />
+                    </div>
+                  </div>
+                </Card>
+              </TabsContent>
+
+              <TabsContent value="petroleum" className="space-y-6">
+                <Card className="overflow-hidden">
+                  <div className="grid lg:grid-cols-2 gap-0">
+                    <div className="p-8">
+                      <div className="flex items-center gap-3 mb-4">
+                        <Fuel className="h-8 w-8 text-primary" />
+                        <div>
+                          <h3 className="text-2xl font-bold">Keerthi Service Station</h3>
+                          <Badge variant="secondary">IOC Authorized</Badge>
+                        </div>
+                      </div>
+                      <p className="text-muted-foreground mb-6">
+                        Authorized Indian Oil Corporation (IOC) service station providing high-quality fuel and services
+                        to customers across Bangalore with commitment to excellence and reliability.
+                      </p>
+                      <div className="space-y-3 mb-6">
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Premium fuel quality</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">24/7 service availability</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Customer-focused approach</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-muted/50 p-8 flex items-center justify-center">
+                      <Image
+                        src="/placeholder.svg?height=300&width=400"
+                        width="400"
+                        height="300"
+                        alt="Keerthi Service Station"
+                        className="rounded-lg object-cover"
+                      />
+                    </div>
+                  </div>
+                </Card>
+              </TabsContent>
+
+              <TabsContent value="lubricants" className="space-y-6">
+                <Card className="overflow-hidden">
+                  <div className="grid lg:grid-cols-2 gap-0">
+                    <div className="p-8">
+                      <div className="flex items-center gap-3 mb-4">
+                        <Building className="h-8 w-8 text-primary" />
+                        <div>
+                          <h3 className="text-2xl font-bold">Binary INC</h3>
+                          <Badge variant="secondary">HPCL Authorized Distributor</Badge>
+                        </div>
+                      </div>
+                      <p className="text-muted-foreground mb-6">
+                        Authorized distributor of HPCL lubricants in Bangalore, focusing on supply and distribution of
+                        high-quality lubricating oils and greases for automotive and industrial applications.
+                      </p>
+                      <div className="space-y-3 mb-6">
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Extensive HPCL product range</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Expert guidance & consultation</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Timely delivery guarantee</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Eco-friendly practices</span>
+                        </div>
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        Serving Bangalore Urban and Rural areas with educational workshops and continuous service
+                        improvement.
+                      </p>
+                    </div>
+                    <div className="bg-muted/50 p-8 flex items-center justify-center">
+                      <Image
+                        src="/placeholder.svg?height=300&width=400"
+                        width="400"
+                        height="300"
+                        alt="Binary INC Lubricants"
+                        className="rounded-lg object-cover"
+                      />
+                    </div>
+                  </div>
+                </Card>
+              </TabsContent>
+            </Tabs>
+          </div>
+        </section>
+
+        {/* Vision & Mission Section */}
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+          <div className="container px-4 md:px-6">
+            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
+              <Card className="p-8">
+                <CardHeader className="pb-4">
+                  <div className="flex items-center gap-3">
+                    <Eye className="h-8 w-8 text-primary" />
+                    <CardTitle className="text-2xl">Our Vision</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed">
+                    To revolutionize the industrial and automotive landscape by seamlessly connecting customers with
+                    innovative FMCG solutions and exceptional vehicles, fostering sustainable growth and empowering
+                    communities.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="p-8">
+                <CardHeader className="pb-4">
+                  <div className="flex items-center gap-3">
+                    <Target className="h-8 w-8 text-primary" />
+                    <CardTitle className="text-2xl">Our Mission</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Our mission is to deliver unparalleled value and service by offering a curated selection of
+                    high-quality industrial products and automobiles. We aim to enhance customer experience through
+                    transparency, innovation, and responsiveness, while championing sustainability and supporting local
+                    economies.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* About Section */}
+        <section id="about" className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6">
+            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+              <div className="flex flex-col justify-center space-y-4">
+                <div className="space-y-2">
+                  <Badge variant="outline" className="w-fit">
+                    Since 1986
+                  </Badge>
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">About Keerthi Group</h2>
+                  <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    Keerthi Group, based in Bangalore, is a distinguished leader in the industrial, FMCG, and automobile
+                    sectors, renowned for its commitment to quality and customer satisfaction. With a rich legacy of
+                    excellence, we strive to deliver innovative solutions that enhance everyday lives while fostering
+                    sustainable practices.
+                  </p>
+                  <p className="max-w-[600px] text-muted-foreground md:text-lg/relaxed">
+                    As part of our expansion, we are excited to announce our upcoming real estate projects that aim to
+                    redefine urban living in Bangalore. These developments will blend modern design with eco-friendly
+                    practices, creating vibrant spaces that cater to contemporary lifestyles.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                  <Button className="h-12 px-8">Our Leadership</Button>
+                  <Button variant="outline" className="h-12 px-8 bg-transparent">
+                    Company Timeline
+                  </Button>
+                </div>
+              </div>
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                width="600"
+                height="400"
+                alt="Keerthi Group Heritage"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Leadership Section */}
+        <section id="leadership" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Leadership Team</h2>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
+                  Meet the visionary leaders driving Keerthi Group's success across multiple generations.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
+              <Card>
+                <CardHeader className="text-center">
+                  <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
+                    <Users className="h-12 w-12 text-muted-foreground" />
+                  </div>
+                  <CardTitle>L.N. Munirathna Setty</CardTitle>
+                  <CardDescription>Founder & Visionary</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground text-center">
+                    Established KEERTHI Group in 1986, beginning with chemical trading and manufacturing. His
+                    entrepreneurial spirit and leadership laid the foundation for the group's remarkable growth.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader className="text-center">
+                  <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
+                    <Users className="h-12 w-12 text-muted-foreground" />
+                  </div>
+                  <CardTitle>Sanjay M</CardTitle>
+                  <CardDescription>Managing Director</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground text-center">
+                    Returned from Arizona in 1992, took over sulphuric acid manufacturing, and led expansion into
+                    automobile dealerships. Under his leadership, KEERTHI became India's oldest and largest Triumph
+                    dealership.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader className="text-center">
+                  <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
+                    <Users className="h-12 w-12 text-muted-foreground" />
+                  </div>
+                  <CardTitle>Pranav Guptha</CardTitle>
+                  <CardDescription>Business Administration Graduate</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground text-center">
+                    Studied at Swansea University, Wales. Manages sales, service, and customer relations for Triumph
+                    Motorcycles and oversees HPCL lubricants distribution across Bangalore.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader className="text-center">
+                  <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
+                    <Users className="h-12 w-12 text-muted-foreground" />
+                  </div>
+                  <CardTitle>Pratul Gupta</CardTitle>
+                  <CardDescription>Founder, Xenon</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground text-center">
+                    Computer Engineering graduate from University of Illinois, Chicago. Founded Xenon in 2023,
+                    developing innovative SaaS solutions for automobile dealership operations.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader className="text-center">
+                  <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
+                    <Users className="h-12 w-12 text-muted-foreground" />
+                  </div>
+                  <CardTitle>Roopashri Sanjay</CardTitle>
+                  <CardDescription>Administrative Operations</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground text-center">
+                    Microbiology background bringing organizational skills and academic expertise to support business
+                    management and ensure smooth administrative operations.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader className="text-center">
+                  <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
+                    <Users className="h-12 w-12 text-muted-foreground" />
+                  </div>
+                  <CardTitle>Padma M</CardTitle>
+                  <CardDescription>Foundation & Support</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground text-center">
+                    Steadfast presence and support system for the family and business. Her dedication has been vital in
+                    maintaining the foundation that allows the group to focus on expansion.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Get in Touch</h2>
+                <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Ready to partner with Keerthi Group? We'd love to hear from you.
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold">Contact Information</h3>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3">
+                    <Mail className="h-5 w-5 text-primary" />
+                    <span>helpdesk@keerthi.co.in</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <MapPin className="h-5 w-5 text-primary" />
+                    <span>Bangalore, Karnataka, India</span>
+                  </div>
+                </div>
+                <div className="pt-4">
+                  <h4 className="font-semibold mb-2">Follow Us</h4>
+                  <div className="flex space-x-4">
+                    <Button variant="outline" size="sm">
+                      LinkedIn
+                    </Button>
+                    <Button variant="outline" size="sm">
+                      Instagram
+                    </Button>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold">Send us a Message</h3>
+                <form className="space-y-4">
+                  <div className="grid grid-cols-2 gap-4">
+                    <Input placeholder="First Name" />
+                    <Input placeholder="Last Name" />
+                  </div>
+                  <Input type="email" placeholder="Email Address" />
+                  <Input placeholder="Company Name" />
+                  <textarea
+                    className="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    placeholder="How can we help you?"
+                    rows={4}
+                  />
+                  <Button type="submit" className="w-full">
+                    Send Message
+                  </Button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  Ready to Partner with Us?
+                </h2>
+                <p className="mx-auto max-w-[600px] text-primary-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Join our legacy of excellence spanning multiple industries and decades of trusted service.
+                </p>
+              </div>
+              <div className="w-full max-w-sm space-y-2">
+                <form className="flex gap-2">
+                  <Input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="max-w-lg flex-1 bg-primary-foreground text-primary"
+                  />
+                  <Button type="submit" variant="secondary">
+                    Subscribe
+                  </Button>
+                </form>
+                <p className="text-xs text-primary-foreground/60">
+                  Stay updated with our latest developments and opportunities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      {/* Footer */}
+      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+        <p className="text-xs text-muted-foreground">
+          © {new Date().getFullYear()} KEERTHI GROUP. All rights reserved.
+        </p>
+        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
+          <Link href="#" className="text-xs hover:underline underline-offset-4">
+            Terms of Service
+          </Link>
+          <Link href="#" className="text-xs hover:underline underline-offset-4">
+            Privacy Policy
+          </Link>
+          <Link href="#" className="text-xs hover:underline underline-offset-4">
+            Careers
+          </Link>
+        </nav>
+      </footer>
+    </div>
+  )
+}
