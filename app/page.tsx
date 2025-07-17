@@ -92,7 +92,7 @@ export default function HomePage() {
             </div>
 
             <Tabs defaultValue="triumph" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 lg:grid-cols-6 mb-8">
+              <TabsList className="grid w-full grid-cols-2 lg:grid-cols-6 mb-8 sticky top-16 z-40 bg-white/90 backdrop-blur overflow-x-auto whitespace-nowrap">
                 <TabsTrigger value="triumph">Automobiles</TabsTrigger>
                 <TabsTrigger value="chemicals">Chemicals</TabsTrigger>
                 <TabsTrigger value="distributions">Distributions</TabsTrigger>
@@ -103,7 +103,7 @@ export default function HomePage() {
 
               <TabsContent value="triumph" className="space-y-6">
                 <Card className="overflow-hidden">
-                  <div className="grid lg:grid-cols-2 gap-0">
+                  <div className="grid lg:grid-cols-2 gap-0 md:gap-4">
                     <div className="p-8">
                       <div className="flex items-center gap-3 mb-4">
                         <Car className="h-8 w-8 text-primary" />
@@ -160,7 +160,7 @@ export default function HomePage() {
 
               <TabsContent value="chemicals" className="space-y-6">
                 <Card className="overflow-hidden">
-                  <div className="grid lg:grid-cols-2 gap-0">
+                  <div className="grid lg:grid-cols-2 gap-0 md:gap-4">
                     <div className="p-8">
                       <div className="flex items-center gap-3 mb-4">
                         <Beaker className="h-8 w-8 text-primary" />
@@ -215,7 +215,7 @@ export default function HomePage() {
 
               <TabsContent value="software" className="space-y-6">
                 <Card className="overflow-hidden">
-                  <div className="grid lg:grid-cols-2 gap-0">
+                  <div className="grid lg:grid-cols-2 gap-0 md:gap-4">
                     <div className="p-8">
                       <div className="flex items-center gap-3 mb-4">
                         <Code className="h-8 w-8 text-primary" />
@@ -266,7 +266,7 @@ export default function HomePage() {
 
               <TabsContent value="fuel-outlet" className="space-y-6">
                 <Card className="overflow-hidden">
-                  <div className="grid lg:grid-cols-2 gap-0">
+                  <div className="grid lg:grid-cols-2 gap-0 md:gap-4">
                     <div className="p-8">
                       <div className="flex items-center gap-3 mb-4">
                         <Fuel className="h-8 w-8 text-primary" />
@@ -315,7 +315,7 @@ export default function HomePage() {
 
               <TabsContent value="real-estate" className="space-y-6">
                 <Card className="overflow-hidden">
-                  <div className="grid lg:grid-cols-2 gap-0">
+                  <div className="grid lg:grid-cols-2 gap-0 md:gap-4">
                     <div className="p-8">
                       <div className="flex items-center gap-3 mb-4">
                         <Home className="h-8 w-8 text-primary" />
@@ -358,7 +358,7 @@ export default function HomePage() {
 
               <TabsContent value="distributions" className="space-y-6">
                 <Card className="overflow-hidden">
-                  <div className="grid lg:grid-cols-2 gap-0">
+                  <div className="grid lg:grid-cols-2 gap-0 md:gap-4">
                     <div className="p-8">
                       <div className="flex items-center gap-3 mb-4">
                         <Building className="h-8 w-8 text-primary" />
@@ -408,7 +408,7 @@ export default function HomePage() {
                 </Card>
 
                 <Card className="overflow-hidden">
-                  <div className="grid lg:grid-cols-2 gap-0">
+                  <div className="grid lg:grid-cols-2 gap-0 md:gap-4">
                     <div className="p-8">
                       <div className="flex items-center gap-3 mb-4">
                         <Building className="h-8 w-8 text-primary" />
@@ -537,6 +537,18 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Trusted By Section */}
+        <section className="w-full py-8 md:py-12">
+          <div className="container px-4 md:px-6">
+            <h3 className="text-xl font-semibold text-center mb-4">Trusted By</h3>
+            <div className="flex items-center justify-center gap-8 overflow-x-auto">
+              <Image src="/placeholder-logo.svg" width="120" height="60" alt="Exide logo" />
+              <Image src="/placeholder-logo.svg" width="120" height="60" alt="Ceat logo" />
+              <Image src="/placeholder-logo.svg" width="120" height="60" alt="HPCL logo" />
+            </div>
+          </div>
+        </section>
+
         {/* Leadership Section */}
         <section id="leadership" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
           <div className="container px-4 md:px-6">
@@ -549,7 +561,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               <Card>
                 <CardHeader className="text-center">
                   <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
