@@ -276,21 +276,27 @@ export default function HomePage() {
                         </div>
                       </div>
                       <p className="text-muted-foreground mb-6">
-                        Authorized Indian Oil Corporation (IOC) service station providing high-quality fuel and services
-                        to customers across Bangalore with commitment to excellence and reliability.
+                        Established in 1979 on Old Madras Road, this flagship outlet is among IOC's highest volume dealers,
+                        moving 1000–1200 KL of diesel every month. Recognized with Chairman's Club and Gold Circle honors,
+                        the station also stocks SERVO lubricants across nine districts and operates a modern C&F facility
+                        managing up to 1700 KL monthly.
                       </p>
                       <div className="space-y-3 mb-6">
                         <div className="flex items-center gap-2">
                           <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm">Premium fuel quality</span>
+                          <span className="text-sm">1000–1200 KL diesel sales monthly</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm">24/7 service availability</span>
+                          <span className="text-sm">Chairman's Club & Gold Circle member</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm">Customer-focused approach</span>
+                          <span className="text-sm">Servo industrial stockist for 9 districts</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">30,000 sq ft C&F facility</span>
                         </div>
                       </div>
                     </div>
@@ -351,6 +357,56 @@ export default function HomePage() {
               </TabsContent>
 
               <TabsContent value="distributions" className="space-y-6">
+                <Card className="overflow-hidden">
+                  <div className="grid lg:grid-cols-2 gap-0">
+                    <div className="p-8">
+                      <div className="flex items-center gap-3 mb-4">
+                        <Building className="h-8 w-8 text-primary" />
+                        <div>
+                          <h3 className="text-2xl font-bold">Keerthi & Co</h3>
+                          <Badge variant="secondary">Servo & Retail Distributor</Badge>
+                        </div>
+                      </div>
+                      <p className="text-muted-foreground mb-6">
+                        Appointed Servo stockist in 2002 for Bangalore East and Kolar, the company now supplies over 100 KL
+                        of lubricants monthly and operates one of Bangalore's top Indian Oil outlets. It also distributes Ray
+                        Ban eyewear across South Karnataka and Ceat tyres for Chikkaballapur district.
+                      </p>
+                      <div className="space-y-3 mb-6">
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Servo automotive lubricant stockist</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Ray Ban & Vogue eyewear distributor</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Ceat tyre distributor since 2022</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500" />
+                          <span className="text-sm">Top 10 Indian Oil dealer in Bangalore</span>
+                        </div>
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        Serving bazaar shops, OEs and retail outlets with a focus on timely deliveries and customer
+                        satisfaction.
+                      </p>
+                    </div>
+                    <div className="bg-muted/50 p-8 flex items-center justify-center">
+                      <Image
+                        src="/placeholder.svg?height=300&width=400"
+                        width="400"
+                        height="300"
+                        alt="Keerthi & Co Distribution"
+                        className="rounded-lg object-cover"
+                      />
+                    </div>
+                  </div>
+                </Card>
+
                 <Card className="overflow-hidden">
                   <div className="grid lg:grid-cols-2 gap-0">
                     <div className="p-8">
@@ -587,6 +643,38 @@ export default function HomePage() {
                   <p className="text-sm text-muted-foreground text-center">
                     Steadfast presence and support system for the family and business. Her dedication has been vital in
                     maintaining the foundation that allows the group to focus on expansion.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader className="text-center">
+                  <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
+                    <Users className="h-12 w-12 text-muted-foreground" />
+                  </div>
+                  <CardTitle>L.N. Prakash Gupta</CardTitle>
+                  <CardDescription>Fuel Retail Pioneer</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground text-center">
+                    Secured the petroleum dealership in 1979–80 and built the Old Madras Road outlet into a top-performing
+                    IOC service station honored with Chairman's Club recognition.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader className="text-center">
+                  <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
+                    <Users className="h-12 w-12 text-muted-foreground" />
+                  </div>
+                  <CardTitle>Karthik P Gupta</CardTitle>
+                  <CardDescription>Director, Keerthi & Co</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground text-center">
+                    Leads Keerthi & Co's lubricant and retail businesses, growing sales from 40 to 100 KL per month and
+                    overseeing Ray Ban and Ceat distribution across South Karnataka.
                   </p>
                 </CardContent>
               </Card>
