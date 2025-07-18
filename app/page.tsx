@@ -147,7 +147,7 @@ export default function HomePage() {
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
-                        src="/triumph.png"
+                        src="/triumph.jpg"
                         width="400"
                         height="300"
                         alt="Keerthi Triumph Showroom"
