@@ -619,6 +619,22 @@ export default function HomePage() {
                   <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
                     <Users className="h-12 w-12 text-muted-foreground" />
                   </div>
+                  <CardTitle>Shilpa Karthik</CardTitle>
+                  <CardDescription>Finance &amp; Accounts</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground text-center">
+                    Wife of Karthik P Gupta, she diligently manages accounting and finances for Keerthi Service Station,
+                    providing the meticulous oversight that keeps operations compliant and efficient.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader className="text-center">
+                  <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
+                    <Users className="h-12 w-12 text-muted-foreground" />
+                  </div>
                   <CardTitle>Pranav Guptha</CardTitle>
                   <CardDescription>Business Administration Graduate</CardDescription>
                 </CardHeader>
