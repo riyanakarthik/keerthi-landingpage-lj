@@ -71,15 +71,6 @@ export default function HomePage() {
                   that enhance everyday lives.
                 </p>
               </div>
-              <div className="space-x-4">
-                <Button size="lg" className="h-12 px-8">
-                  Explore Our Divisions
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-                <Button variant="outline" size="lg" className="h-12 px-8 bg-transparent">
-                  Our Story
-                </Button>
-              </div>
             </div>
           </div>
         </section>
@@ -777,9 +768,7 @@ export default function HomePage() {
           <Link href="#" className="text-xs hover:underline underline-offset-4">
             Privacy Policy
           </Link>
-          <Link href="#" className="text-xs hover:underline underline-offset-4">
-            Careers
-          </Link>
+          
         </nav>
       </footer>
     </div>
