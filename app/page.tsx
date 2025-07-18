@@ -517,9 +517,6 @@ export default function HomePage() {
                     practices, creating vibrant spaces that cater to contemporary lifestyles.
                   </p>
                 </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button className="h-12 px-8">Our Leadership</Button>
-                </div>
               </div>
               <Image
                 src="/placeholder.svg?height=400&width=600"
