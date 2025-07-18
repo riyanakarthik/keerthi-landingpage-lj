@@ -147,7 +147,7 @@ export default function HomePage() {
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
-                        src="/placeholder.svg?height=300&width=400"
+                        src="/triumph.png"
                         width="400"
                         height="300"
                         alt="Keerthi Triumph Showroom"
@@ -202,7 +202,7 @@ export default function HomePage() {
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
-                        src="/placeholder.svg?height=300&width=400"
+                        src="/chemicals.jpg"
                         width="400"
                         height="300"
                         alt="Keerthi Chemicals Plant"
@@ -253,7 +253,7 @@ export default function HomePage() {
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
-                        src="/placeholder.svg?height=300&width=400"
+                        src="/xenon.png"
                         width="400"
                         height="300"
                         alt="Xenon Software Dashboard"
@@ -278,8 +278,7 @@ export default function HomePage() {
                       <p className="text-muted-foreground mb-6">
                         Established in 1979 on Old Madras Road, this flagship outlet is among IOC's highest volume dealers,
                         moving 1000–1200 KL of diesel every month. Recognized with Chairman's Club and Gold Circle honors,
-                        the station also stocks SERVO lubricants across nine districts and operates a modern C&F facility
-                        managing up to 1700 KL monthly.
+                        the station also stocks SERVO lubricants across nine districts.
                       </p>
                       <div className="space-y-3 mb-6">
                         <div className="flex items-center gap-2">
@@ -302,7 +301,7 @@ export default function HomePage() {
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
-                        src="/placeholder.svg?height=300&width=400"
+                        src="/kss.jpg"
                         width="400"
                         height="300"
                         alt="Keerthi Service Station"
@@ -345,7 +344,7 @@ export default function HomePage() {
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
-                        src="/placeholder.svg?height=300&width=400"
+                        src="/realestate.jpg"
                         width="400"
                         height="300"
                         alt="Keerthi Estates Illustration"
@@ -446,7 +445,7 @@ export default function HomePage() {
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
-                        src="/placeholder.svg?height=300&width=400"
+                        src="/binary.png"
                         width="400"
                         height="300"
                         alt="Binary INC Lubricants"
