@@ -2,9 +2,23 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Keerthi Group - Multi-Industry Excellence',
+  description:
+    'Since 1986 Keerthi Group has delivered outstanding solutions across automobiles, chemicals, software and more.',
+  keywords: [
+    'Keerthi Group',
+    'automobiles',
+    'chemicals',
+    'Bangalore',
+    'industrial',
+    'software',
+  ],
   generator: 'v0.dev',
+  openGraph: {
+    title: 'Keerthi Group - Multi-Industry Excellence',
+    description:
+      'Since 1986 Keerthi Group has delivered outstanding solutions across automobiles, chemicals, software and more.',
+  },
 }
 
 export default function RootLayout({
