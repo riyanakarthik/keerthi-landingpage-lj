@@ -537,18 +537,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Trusted By Section */}
-        <section className="w-full py-8 md:py-12">
-          <div className="container px-4 md:px-6">
-            <h3 className="text-xl font-semibold text-center mb-4">Trusted By</h3>
-            <div className="flex items-center justify-center gap-8 overflow-x-auto">
-              <Image src="/placeholder-logo.svg" width="120" height="60" alt="Exide logo" />
-              <Image src="/placeholder-logo.svg" width="120" height="60" alt="Ceat logo" />
-              <Image src="/placeholder-logo.svg" width="120" height="60" alt="HPCL logo" />
-            </div>
-          </div>
-        </section>
-
         {/* Leadership Section */}
         <section id="leadership" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
           <div className="container px-4 md:px-6">
@@ -583,6 +571,22 @@ export default function HomePage() {
                   <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
                     <Users className="h-12 w-12 text-muted-foreground" />
                   </div>
+                  <CardTitle>L.N. Prakash Gupta</CardTitle>
+                  <CardDescription>Fuel Retail Pioneer</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground text-center">
+                    Secured the petroleum dealership in 1979–80 and built the Old Madras Road outlet into a top-performing
+                    IOC service station honored with Chairman's Club recognition.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader className="text-center">
+                  <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
+                    <Users className="h-12 w-12 text-muted-foreground" />
+                  </div>
                   <CardTitle>Sanjay M</CardTitle>
                   <CardDescription>Managing Director</CardDescription>
                 </CardHeader>
@@ -591,6 +595,22 @@ export default function HomePage() {
                     Returned from Arizona in 1992, took over sulphuric acid manufacturing, and led expansion into
                     automobile dealerships. Under his leadership, KEERTHI became India's oldest and largest Triumph
                     dealership.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader className="text-center">
+                  <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
+                    <Users className="h-12 w-12 text-muted-foreground" />
+                  </div>
+                  <CardTitle>Karthik P Gupta</CardTitle>
+                  <CardDescription>Director, Keerthi & Co</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground text-center">
+                    Leads Keerthi & Co's lubricant and retail businesses, growing sales from 40 to 100 KL per month and
+                    overseeing Ray Ban and Ceat distribution across South Karnataka.
                   </p>
                 </CardContent>
               </Card>
@@ -658,38 +678,6 @@ export default function HomePage() {
                   </p>
                 </CardContent>
               </Card>
-
-              <Card>
-                <CardHeader className="text-center">
-                  <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
-                    <Users className="h-12 w-12 text-muted-foreground" />
-                  </div>
-                  <CardTitle>L.N. Prakash Gupta</CardTitle>
-                  <CardDescription>Fuel Retail Pioneer</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground text-center">
-                    Secured the petroleum dealership in 1979–80 and built the Old Madras Road outlet into a top-performing
-                    IOC service station honored with Chairman's Club recognition.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader className="text-center">
-                  <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
-                    <Users className="h-12 w-12 text-muted-foreground" />
-                  </div>
-                  <CardTitle>Karthik P Gupta</CardTitle>
-                  <CardDescription>Director, Keerthi & Co</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground text-center">
-                    Leads Keerthi & Co's lubricant and retail businesses, growing sales from 40 to 100 KL per month and
-                    overseeing Ray Ban and Ceat distribution across South Karnataka.
-                  </p>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </section>
@@ -751,7 +739,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-        </section>
+
 
       </main>
 
