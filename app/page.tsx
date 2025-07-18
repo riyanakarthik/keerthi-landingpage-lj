@@ -35,10 +35,6 @@ export default function HomePage() {
             alt="Keerthi Group Logo"
             className="h-8 w-auto"
           />
-          <div className="flex flex-col leading-none">
-            <span className="text-2xl font-bold text-primary">KEERTHI</span>
-            <span className="text-sm text-muted-foreground">GROUP</span>
-          </div>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link href="#divisions" className="text-sm font-medium hover:underline underline-offset-4">
