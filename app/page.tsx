@@ -396,7 +396,7 @@ export default function HomePage() {
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
-                        src="/placeholder.svg?height=300&width=400"
+                        src="keerthi&co.jpg"
                         width="400"
                         height="300"
                         alt="Keerthi & Co Distribution"
