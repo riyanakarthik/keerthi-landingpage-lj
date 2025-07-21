@@ -148,6 +148,13 @@ export default function HomePage() {
                           <Phone className="h-4 w-4 inline mr-2" />
                           +91 9986665565
                         </p>
+                        <Link
+                          href="#"
+                          className="inline-flex items-center gap-1 text-primary font-medium hover:underline mt-4"
+                        >
+                          Learn More
+                          <ArrowRight className="h-4 w-4" />
+                        </Link>
                       </div>
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
@@ -252,6 +259,13 @@ export default function HomePage() {
                           <span className="text-sm">Transforming traditional workflows with automation</span>
                         </div>
                       </div>
+                      <Link
+                        href="#"
+                        className="inline-flex items-center gap-1 text-primary font-medium hover:underline mt-4"
+                      >
+                        Learn More
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
@@ -393,6 +407,13 @@ export default function HomePage() {
                         Serving bazaar shops, OEs and retail outlets with a focus on timely deliveries and customer
                         satisfaction.
                       </p>
+                      <Link
+                        href="#"
+                        className="inline-flex items-center gap-1 text-primary font-medium hover:underline mt-4"
+                      >
+                        Learn More
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
