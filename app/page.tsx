@@ -117,9 +117,10 @@ export default function HomePage() {
                         </div>
                       </div>
                       <p className="text-muted-foreground mb-6">
-                        Ultra-modern showroom with integrated after-sales service facility featuring the global
-                        signature Triumph Motorcycles layout. Unique 'Build your own Bike' concept in the premium
-                        motorcycle segment.
+                        With four strategic locations across Bangalore and Mysore, Keerthi Triumph offers 
+                        a cutting-edge showroom and after-sales service facility that embodies Triumph’s 
+                        global signature layout. The dealership introduces the unique Build Your Own Bike 
+                        concept and boasts a curated collection of premium Triumph merchandise.
                       </p>
                       <div className="space-y-3 mb-6">
                         <div className="flex items-center gap-2">
@@ -174,8 +175,8 @@ export default function HomePage() {
                         </div>
                       </div>
                       <p className="text-muted-foreground mb-6">
-                        Pioneer in Inorganic Chemicals with 50+ years of manufacturing Sulphuric Acid. Leading producer
-                        serving batteries, textiles, refineries, and more.
+                        As pioneers in manufacturing Sulphuric Acid, Keerthi Chemicals serves major clients
+                        across the battery, textile, refinery industries and many more.
                       </p>
                       <div className="space-y-3 mb-6">
                         <div className="flex items-center gap-2">
@@ -225,21 +226,22 @@ export default function HomePage() {
                         <Code className="h-8 w-8 text-primary" />
                         <div>
                           <h3 className="text-2xl font-bold">Xenon</h3>
-                          <Badge variant="secondary">Future of Dealership Management</Badge>
+                          <Badge variant="secondary">The Future of Dealership Management</Badge>
                         </div>
                       </div>
                       <p className="text-muted-foreground mb-6">
-                        Cutting-edge SaaS platform with intuitive dashboard transforming dealership operations.
-                        Real-time inventory tracking, seamless vehicle monitoring, and optimized day-to-day operations.
+                        Built by KEERTHI Group’s next-gen leadership, Xenon is a powerful SaaS platform revolutionizing 
+                        dealership operations with real-time inventory tracking, vehicle monitoring, and scalable workflows. 
+                        Designed for precision, built for the future.
                       </p>
                       <div className="space-y-3 mb-6">
                         <div className="flex items-center gap-2">
                           <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm">Real-time inventory management</span>
+                          <span className="text-sm">Smart dashboard for operational excellence</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm">Seamless vehicle monitoring</span>
+                          <span className="text-sm">Ready for global expansion</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <CheckCircle className="h-4 w-4 text-green-500" />
@@ -247,13 +249,9 @@ export default function HomePage() {
                         </div>
                         <div className="flex items-center gap-2">
                           <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm">Global expansion ready</span>
+                          <span className="text-sm">Transforming traditional workflows with automation</span>
                         </div>
                       </div>
-                      <p className="text-sm text-muted-foreground">
-                        Designed for precision and efficiency, managing every vehicle's journey from stockyard to
-                        customer.
-                      </p>
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
@@ -276,13 +274,13 @@ export default function HomePage() {
                         <Fuel className="h-8 w-8 text-primary" />
                         <div>
                           <h3 className="text-2xl font-bold">Keerthi Service Station</h3>
-                          <Badge variant="secondary">IOC Authorized</Badge>
+                          <Badge variant="secondary">IOC Elite Partner</Badge>
                         </div>
                       </div>
                       <p className="text-muted-foreground mb-6">
-                        Established in 1979 on Old Madras Road, this flagship outlet is among IOC's highest volume dealers,
-                        moving 1000–1200 KL of diesel every month. Recognized with Chairman's Club and Gold Circle honors,
-                        the station also stocks SERVO lubricants across nine districts.
+                        Since 1979, this flagship IOC outlet on Old Madras Road has achieved unmatched 
+                        fuel sales volumes and accolades like the Chairman’s Club and Gold Circle awards. 
+                        It also acts as a major stockist of SERVO lubricants across 9 districts.
                       </p>
                       <div className="space-y-3 mb-6">
                         <div className="flex items-center gap-2">
@@ -291,16 +289,13 @@ export default function HomePage() {
                         </div>
                         <div className="flex items-center gap-2">
                           <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm">Chairman's Club & Gold Circle member</span>
+                          <span className="text-sm">30,000 sq. ft. C&F facility</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm">Servo industrial stockist for 9 districts</span>
+                          <span className="text-sm">Top-tier Indian Oil dealer recognition</span>
                         </div>
-                        <div className="flex items-center gap-2">
-                          <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm">30,000 sq ft C&F facility</span>
-                        </div>
+                        
                       </div>
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
@@ -328,21 +323,22 @@ export default function HomePage() {
                         </div>
                       </div>
                       <p className="text-muted-foreground mb-6">
-                        Upcoming residential and commercial projects blending modern design with eco-friendly practices to
-                        redefine urban living in Bangalore.
+                        Alongside its core business verticals, Keerthi Group also maintains a portfolio of select real 
+                        estate holdings in Bangalore. These assets reflect the group’s diversified approach and long-term
+                        commitment to value-driven investments.
                       </p>
                       <div className="space-y-3 mb-6">
                         <div className="flex items-center gap-2">
                           <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm">Modern architecture</span>
+                          <span className="text-sm">Privately held real estate assets in key city locations</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm">Eco-friendly materials</span>
+                          <span className="text-sm">Maintained as part of the group’s long-term asset strategy</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm">Premium amenities</span>
+                          <span className="text-sm">Reflecting stability, foresight, and multi-sector presence</span>
                         </div>
                       </div>
                     </div>
@@ -367,7 +363,7 @@ export default function HomePage() {
                         <Building className="h-8 w-8 text-primary" />
                         <div>
                           <h3 className="text-2xl font-bold">Keerthi & Co</h3>
-                          <Badge variant="secondary">Servo & Retail Distributor</Badge>
+                          <Badge variant="secondary">Distribution Powerhouse</Badge>
                         </div>
                       </div>
                       <p className="text-muted-foreground mb-6">
@@ -421,31 +417,26 @@ export default function HomePage() {
                         </div>
                       </div>
                       <p className="text-muted-foreground mb-6">
-                        Authorized distributor of HPCL lubricants in Bangalore, focusing on supply and distribution of
-                        high-quality lubricating oils and greases for automotive and industrial applications.
+                        Delivering high-quality HPCL lubricants to automotive and industrial clients across
+                        Bangalore Urban and Rural. Binary INC is committed to expert consultation, timely delivery,
+                        and eco-conscious practices.
                       </p>
                       <div className="space-y-3 mb-6">
                         <div className="flex items-center gap-2">
                           <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm">Extensive HPCL product range</span>
+                          <span className="text-sm">Full range of HPCL oils and greases</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm">Expert guidance & consultation</span>
+                          <span className="text-sm">On-ground educational workshops</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm">Timely delivery guarantee</span>
+                          <span className="text-sm">Personalized service for workshops and end users</span>
                         </div>
-                        <div className="flex items-center gap-2">
-                          <CheckCircle className="h-4 w-4 text-green-500" />
-                          <span className="text-sm">Eco-friendly practices</span>
-                        </div>
+    
                       </div>
-                      <p className="text-sm text-muted-foreground">
-                        Serving Bangalore Urban and Rural areas with educational workshops and continuous service
-                        improvement.
-                      </p>
+                     
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
