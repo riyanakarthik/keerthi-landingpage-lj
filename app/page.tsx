@@ -26,7 +26,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen max-w-7xl mx-auto">
       {/* Header */}
-      <header className="px-4 lg:px-6 h-16 flex items-center border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
+      <header className="px-4 lg:px-6 h-16 flex items-center border-b bg-black text-white sticky top-0 z-50">
         <Link href="/" className="flex items-center justify-center space-x-2">
           <Image
             src="/logo.png"
@@ -72,8 +72,8 @@ export default function HomePage() {
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                   KEERTHI GROUP
                 </h1>
-                <p className="text-xl md:text-2xl font-medium text-primary mb-4">Excellence in Every Endeavor</p>
-                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                <p className="text-xl md:text-2xl font-medium text-primary mb-4 text-justify">Excellence in Every Endeavor</p>
+                <p className="mx-auto max-w-[700px] text-muted-foreground text-justify md:text-xl">
                   A distinguished leader in industrial, FMCG, and automobile sectors, renowned for quality and customer
                   satisfaction. From chemicals to motorcycles, software to lubricants - we deliver innovative solutions
                   that enhance everyday lives.
@@ -89,7 +89,7 @@ export default function HomePage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Divisions</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
+                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed text-justify">
                   Diverse portfolio spanning multiple industries, each committed to excellence and innovation.
                 </p>
               </div>
@@ -116,7 +116,7 @@ export default function HomePage() {
                           <Badge variant="secondary">Oldest & Largest Triumph Dealership in India</Badge>
                         </div>
                       </div>
-                      <p className="text-muted-foreground mb-6">
+                      <p className="text-muted-foreground mb-6 text-justify">
                         With four strategic locations across Bangalore and Mysore, Keerthi Triumph offers 
                         a cutting-edge showroom and after-sales service facility that embodies Triumph’s 
                         global signature layout. The dealership introduces the unique Build Your Own Bike 
@@ -137,14 +137,14 @@ export default function HomePage() {
                         </div>
                       </div>
                       <div className="space-y-2">
-                        <p className="font-semibold">Locations:</p>
+                        <p className="font-semibold text-justify">Locations:</p>
                         <div className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
                           <span>• Residency Road</span>
                           <span>• JP Nagar</span>
                           <span>• HBR Layout</span>
                           <span>• Mysore</span>
                         </div>
-                        <p className="text-sm mt-4">
+                        <p className="text-sm mt-4 text-justify">
                           <Phone className="h-4 w-4 inline mr-2" />
                           +91 9986665565
                         </p>
@@ -174,7 +174,7 @@ export default function HomePage() {
                           <Badge variant="secondary">5 Decades of Excellence</Badge>
                         </div>
                       </div>
-                      <p className="text-muted-foreground mb-6">
+                      <p className="text-muted-foreground mb-6 text-justify">
                         As pioneers in manufacturing Sulphuric Acid, Keerthi Chemicals serves major clients
                         across the battery, textile, refinery industries and many more.
                       </p>
@@ -193,7 +193,7 @@ export default function HomePage() {
                         </div>
                       </div>
                       <div className="space-y-2">
-                        <p className="font-semibold">Key Clients:</p>
+                        <p className="font-semibold text-justify">Key Clients:</p>
                         <div className="text-sm text-muted-foreground space-y-1">
                           <span>• Exide Industries Ltd, Hosur</span>
                           <br />
@@ -229,7 +229,7 @@ export default function HomePage() {
                           <Badge variant="secondary">The Future of Dealership Management</Badge>
                         </div>
                       </div>
-                      <p className="text-muted-foreground mb-6">
+                      <p className="text-muted-foreground mb-6 text-justify">
                         Built by KEERTHI Group’s next-gen leadership, Xenon is a powerful SaaS platform revolutionizing 
                         dealership operations with real-time inventory tracking, vehicle monitoring, and scalable workflows. 
                         Designed for precision, built for the future.
@@ -277,7 +277,7 @@ export default function HomePage() {
                           <Badge variant="secondary">IOC Elite Partner</Badge>
                         </div>
                       </div>
-                      <p className="text-muted-foreground mb-6">
+                      <p className="text-muted-foreground mb-6 text-justify">
                         Since 1979, this flagship IOC outlet on Old Madras Road has achieved unmatched 
                         fuel sales volumes and accolades like the Chairman’s Club and Gold Circle awards. 
                         It also acts as a major stockist of SERVO lubricants across 9 districts.
@@ -322,7 +322,7 @@ export default function HomePage() {
                           <Badge variant="secondary">Coming Soon</Badge>
                         </div>
                       </div>
-                      <p className="text-muted-foreground mb-6">
+                      <p className="text-muted-foreground mb-6 text-justify">
                         Alongside its core business verticals, Keerthi Group also maintains a portfolio of select real 
                         estate holdings in Bangalore. These assets reflect the group’s diversified approach and long-term
                         commitment to value-driven investments.
@@ -366,7 +366,7 @@ export default function HomePage() {
                           <Badge variant="secondary">Distribution Powerhouse</Badge>
                         </div>
                       </div>
-                      <p className="text-muted-foreground mb-6">
+                      <p className="text-muted-foreground mb-6 text-justify">
                         Appointed Servo stockist in 2002 for Bangalore East and Kolar, the company now supplies over 100 KL
                         of lubricants monthly and operates one of Bangalore's top Indian Oil outlets. It also distributes Ray
                         Ban eyewear across South Karnataka and Ceat tyres for Chikkaballapur district.
@@ -389,7 +389,7 @@ export default function HomePage() {
                           <span className="text-sm">Top 10 Indian Oil dealer in Bangalore</span>
                         </div>
                       </div>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-muted-foreground text-justify">
                         Serving bazaar shops, OEs and retail outlets with a focus on timely deliveries and customer
                         satisfaction.
                       </p>
@@ -416,7 +416,7 @@ export default function HomePage() {
                           <Badge variant="secondary">HPCL Authorized Distributor</Badge>
                         </div>
                       </div>
-                      <p className="text-muted-foreground mb-6">
+                      <p className="text-muted-foreground mb-6 text-justify">
                         Delivering high-quality HPCL lubricants to automotive and industrial clients across
                         Bangalore Urban and Rural. Binary INC is committed to expert consultation, timely delivery,
                         and eco-conscious practices.
@@ -466,7 +466,7 @@ export default function HomePage() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed text-justify">
                     To revolutionize the industrial and automotive landscape by seamlessly connecting customers with
                     innovative FMCG solutions and exceptional vehicles, fostering sustainable growth and empowering
                     communities.
@@ -482,7 +482,7 @@ export default function HomePage() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed text-justify">
                     Our mission is to deliver unparalleled value and service by offering a curated selection of
                     high-quality industrial products and automobiles. We aim to enhance customer experience through
                     transparency, innovation, and responsiveness, while championing sustainability and supporting local
@@ -504,13 +504,13 @@ export default function HomePage() {
                     Since 1986
                   </Badge>
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">About Keerthi Group</h2>
-                  <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-justify">
                     Keerthi Group, based in Bangalore, is a distinguished leader in the industrial, FMCG, and automobile
                     sectors, renowned for its commitment to quality and customer satisfaction. With a rich legacy of
                     excellence, we strive to deliver innovative solutions that enhance everyday lives while fostering
                     sustainable practices.
                   </p>
-                  <p className="max-w-[600px] text-muted-foreground md:text-lg/relaxed">
+                  <p className="max-w-[600px] text-muted-foreground md:text-lg/relaxed text-justify">
                     As part of our expansion, we are excited to announce our upcoming real estate projects that aim to
                     redefine urban living in Bangalore. These developments will blend modern design with eco-friendly
                     practices, creating vibrant spaces that cater to contemporary lifestyles.
@@ -697,7 +697,7 @@ export default function HomePage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Get in Touch</h2>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-justify">
                   Ready to partner with Keerthi Group? We'd love to hear from you.
                 </p>
               </div>
@@ -753,8 +753,8 @@ export default function HomePage() {
       </main>
 
       {/* Footer */}
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-muted-foreground">
+      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-black text-white">
+        <p className="text-xs text-justify text-muted-foreground">
           © {new Date().getFullYear()} KEERTHI GROUP. All rights reserved.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
