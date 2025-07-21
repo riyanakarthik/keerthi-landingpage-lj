@@ -54,8 +54,16 @@ export default function HomePage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-br from-slate-50 to-white">
-          <div className="container px-4 md:px-6">
+        <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 overflow-hidden">
+          <Image
+            src="/skyline.png"
+            alt="Skyline background"
+            fill
+            priority
+            className="object-cover -z-10"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-50/80 to-white/80 -z-10" />
+          <div className="container relative px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <Badge variant="secondary" className="mb-4 text-sm px-4 py-2">
