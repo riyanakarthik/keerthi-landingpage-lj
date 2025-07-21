@@ -11,6 +11,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .text-justify {
+    text-align: justify;
+  }
 }
 
 @layer base {
