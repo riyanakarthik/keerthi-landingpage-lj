@@ -392,7 +392,7 @@ export default function HomePage() {
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
-                        src="keerthi&co.jpg"
+                        src="/keerthi&co.jpg"
                         width="400"
                         height="300"
                         alt="Keerthi & Co Distribution"
@@ -519,7 +519,7 @@ export default function HomePage() {
                 </div>
               </div>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/about-us.jpg"
                 width="600"
                 height="400"
                 alt="Keerthi Group Heritage"
