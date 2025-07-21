@@ -715,17 +715,7 @@ export default function HomePage() {
                     <span>Bangalore, Karnataka, India</span>
                   </div>
                 </div>
-                <div className="pt-4">
-                  <h4 className="font-semibold mb-2">Follow Us</h4>
-                  <div className="flex space-x-4">
-                    <Button variant="outline" size="sm">
-                      LinkedIn
-                    </Button>
-                    <Button variant="outline" size="sm">
-                      Instagram
-                    </Button>
-                  </div>
-                </div>
+                
               </div>
               <div className="space-y-4">
                 <h3 className="text-xl font-bold">Send us a Message</h3>
