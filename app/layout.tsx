@@ -31,7 +31,9 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
+
       <body className="m-0 mx-auto w-full max-w-7xl px-4">{children}</body>
+
     </html>
   )
 }
