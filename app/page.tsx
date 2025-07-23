@@ -73,7 +73,7 @@ export default function HomePage() {
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                   KEERTHI GROUP
                 </h1>
-                <p className="text-xl md:text-2xl font-medium text-primary mb-4 text-justify">Excellence in Every Endeavor</p>
+                <p className="text-xl md:text-2xl font-medium text-primary mb-4 text-center">Excellence in Every Endeavor</p>
                 <p className="mx-auto max-w-[700px] text-muted-foreground text-justify md:text-xl">
                   A distinguished leader in industrial, FMCG, and automobile sectors, renowned for quality and customer
                   satisfaction. From chemicals to motorcycles, software to lubricants - we deliver innovative solutions
