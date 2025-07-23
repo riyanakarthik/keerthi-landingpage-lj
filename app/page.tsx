@@ -740,21 +740,27 @@ export default function HomePage() {
               </div>
               <div className="space-y-4">
                 <h3 className="text-xl font-bold">Send us a Message</h3>
-                <form className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
-                    <Input placeholder="First Name" />
-                    <Input placeholder="Last Name" />
-                  </div>
-                  <Input type="email" placeholder="Email Address" />
-                  <Input placeholder="Company Name" />
-                  <textarea
-                    className="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="How can we help you?"
-                    rows={4}
-                  />
-                  <Button type="submit" className="w-full">
-                    Send Message
-                  </Button>
+                <form
+                  action="https://formspree.io/f/xrblplnr"
+                  method="POST"
+                  className="space-y-4"
+                >
+                <div className="grid grid-cols-2 gap-4">
+                  <Input name="firstName" placeholder="First Name" required />
+                  <Input name="lastName" placeholder="Last Name" required />
+                </div>
+                <Input type="email" name="email" placeholder="Email Address" required />
+                <Input name="company" placeholder="Company Name" />
+                <textarea
+                  name="message"
+                  className="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  placeholder="How can we help you?"
+                  rows={4}
+                  required
+                />
+                <Button type="submit" className="w-full">
+                  Send Message
+                </Button>
                 </form>
               </div>
             </div>
