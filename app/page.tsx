@@ -149,8 +149,9 @@ export default function HomePage() {
                           +91 9986665565
                         </p>
                         <Link
-                          href="www.keerthitriumph.com"
+                          href="https://www.keerthitriumph.com"
                           className="inline-flex items-center gap-1 text-primary font-medium hover:underline mt-4"
+                          target="_blank"
                         >
                           Learn More
                           <ArrowRight className="h-4 w-4" />
@@ -260,8 +261,9 @@ export default function HomePage() {
                         </div>
                       </div>
                       <Link
-                        href="www.xenonplatform.com"
+                        href="https://www.xenonplatform.com"
                         className="inline-flex items-center gap-1 text-primary font-medium hover:underline mt-4"
+                        target="_blank"
                       >
                         Learn More
                         <ArrowRight className="h-4 w-4" />
