@@ -24,8 +24,7 @@ import Image from "next/image"
 
 export default function HomePage() {
   return (
-
-    <div className="flex flex-col min-h-screen w-full max-w-7xl mx-auto px-4">
+    <>
 
       {/* Header */}
       <header className="px-4 lg:px-6 h-16 flex items-center border-b bg-black text-white sticky top-0 z-50">
@@ -56,17 +55,17 @@ export default function HomePage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 overflow-hidden">
+        <section className="relative w-full overflow-hidden">
           <Image
             src="/skyline.png"
-            alt="Skyline background"
+            alt="Skyline"
             fill
             priority
             className="object-cover -z-10"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-slate-50/80 to-white/80 -z-10" />
-          <div className="container relative px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-4 text-center">
+          <div className="relative max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+            <div className="flex flex-col items-center space-y-4">
               <div className="space-y-2">
                 <Badge variant="secondary" className="mb-4 text-sm px-4 py-2">
                   Since 1986 • Multi-Industry Excellence
@@ -87,7 +86,7 @@ export default function HomePage() {
 
         {/* Divisions Section */}
         <section id="divisions" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Divisions</h2>
@@ -481,7 +480,7 @@ export default function HomePage() {
 
         {/* Vision & Mission Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-          <div className="container px-4 md:px-6">
+          <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <Card className="p-8">
                 <CardHeader className="pb-4">
@@ -521,7 +520,7 @@ export default function HomePage() {
 
         {/* About Section */}
         <section id="about" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
@@ -555,7 +554,7 @@ export default function HomePage() {
 
         {/* Leadership Section */}
         <section id="leadership" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-          <div className="container px-4 md:px-6">
+          <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Leadership Team</h2>
@@ -718,7 +717,7 @@ export default function HomePage() {
 
         {/* Contact Section */}
         <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Get in Touch</h2>
@@ -788,6 +787,6 @@ export default function HomePage() {
           
         </nav>
       </footer>
-    </div>
+    </>
   )
 }
